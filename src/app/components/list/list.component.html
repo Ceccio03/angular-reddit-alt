@@ -7,9 +7,13 @@
                 <span>{{post.author}}</span>
                 <span>{{post.created}}</span>
             </div>
+            <div class="spacer"></div>
             <div class="buttons-container">
-                <button>Save</button>
+                <button (click)="storage.savePost(post)">{{storage.isFavourite(post) ? 'rimuovi' : 'salva'}}</button>
                 <a href="{{post.url}}">
+                    <button>Vai al Reddit</button>
+                </a>
+                <a href="{{'https://www.reddit.com/' + post.permalink}}">
                     <button>Vai al Reddit</button>
                 </a>
             </div>

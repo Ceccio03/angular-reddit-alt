@@ -1,7 +1,7 @@
 <div *ngIf="postData" class="card">
     <img class="post-image" src="{{postData.thumbnail.includes('http') ? postData.thumbnail : './assets/thumb.png'}}" alt="post thumbnail">
     <div class="post-text">
-        <span>{{postData.title}}</span>
+        <span>{{postData.title | uppercase}}</span>
         <span>{{postData.author}}</span>
         <span>{{postData.created}}</span>
     </div>

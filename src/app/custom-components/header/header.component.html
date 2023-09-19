@@ -2,6 +2,6 @@
     <h1> Reddit </h1>
     <nav>
         <a routerLink="./home">Home</a>
-        <a routerLink="./favourites">Preferiti{{storage.favourites.length}}</a>
+        <a routerLink="./favourites">Preferiti({{(storage.favouritesSubject | async)!.length}})</a>
     </nav>
 </header>

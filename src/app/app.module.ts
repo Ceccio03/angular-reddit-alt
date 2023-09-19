@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { ListComponent } from './components/list/list.component';
-import { CardComponent } from './components/card/card.component';
+import { HeaderComponent } from './custom-components/header/header.component';
+import { FooterComponent } from './custom-components/footer/footer.component';
+import { ListComponent } from './custom-components/list/list.component';
+import { CardComponent } from './custom-components/card/card.component';
 
 @NgModule({
   declarations: [

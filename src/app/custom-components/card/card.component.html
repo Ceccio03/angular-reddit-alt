@@ -4,11 +4,11 @@
     <div class="post-text">
         <span>{{postData.title | uppercase}}</span>
         <span>{{postData.author}}</span>
-        <span>{{postData.created | timestampToDate:true}}</span>
+        <span>{{postData.created_utc | timestampToDate : true | uppercase}}</span>
     </div>
     <div class="spacer"></div>
     <div class="buttons-container">
-        <button (click)="storage.toggleFavourites(postData)">{{storage.isFavourite(postData) ? 'rimuovi' : 'salva'}}</button>
+        <button (click)="storage.toggleFavourites(postData)">{{postData.isFavourite ? 'rimuovi':'salva'}}</button>
         <a href="{{postData.url}}">
             <button>Vai al Reddit</button>
         </a>

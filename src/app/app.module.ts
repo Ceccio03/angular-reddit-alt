@@ -10,6 +10,7 @@ import { ListComponent } from './custom-components/list/list.component';
 import { CardComponent } from './custom-components/card/card.component';
 import { FavouritesComponent } from './custom-components/favourites/favourites.component';
 import { TimestampToDatePipe } from './pipes/timestamp-to-date.pipe';
+import { UpperFirstTitleLetterPipe } from './pipes/upper-first-title-letter.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TimestampToDatePipe } from './pipes/timestamp-to-date.pipe';
     ListComponent,
     CardComponent,
     FavouritesComponent,
-    TimestampToDatePipe
+    TimestampToDatePipe,
+    UpperFirstTitleLetterPipe
   ],
   imports: [
     BrowserModule,

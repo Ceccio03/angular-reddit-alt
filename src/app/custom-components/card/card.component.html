@@ -1,9 +1,10 @@
-<div *ngIf="postData" class="card">
+<div *ngIf="postData" [ngStyle]="{backgroundColor: bColor}" class="card">
+    <span *ngIf="isFavourites">★</span>
     <img class="post-image" src="{{postData.thumbnail.includes('http') ? postData.thumbnail : './assets/thumb.png'}}" alt="post thumbnail">
     <div class="post-text">
         <span>{{postData.title | uppercase}}</span>
         <span>{{postData.author}}</span>
-        <span>{{postData.created}}</span>
+        <span>{{postData.created | timestampToDate:true}}</span>
     </div>
     <div class="spacer"></div>
     <div class="buttons-container">
